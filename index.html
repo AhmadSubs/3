@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="cs-CZ">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARON HELP | Premium Business Assistance Prague</title>
-    <meta name="google-site-verification" content="UyQNMj-3m6jWu_gyMh5HHPfAd5rQMqQp0I9wdFLaGfA" />
-    <meta name="description" content="Aron Help by SoaPraha menyediakan layanan asistensi bisnis eksklusif, konsultasi manajemen, dan solusi korporat premium di jantung kota Praha. Efisiensi bertemu dengan tradisi.">
-    <meta name="keywords" content="Aron Help, SoaPraha, business consulting Prague, luxury business assistant, corporate helpdesk Czech, business help Prague">
-    <meta name="author" content="SoaPraha Group">
-    <meta name="robots" content="index, follow">
+    <title>Jenkins Gamevy | Automation of Innovation</title>
     
-    <link rel="canonical" href="https://aron-help.soapraha.cz/" />
+    <meta name="description" content="Jenkins Gamevy: Pusat orkestrasi teknologi dan otomatisasi pengembangan game tingkat lanjut. Membangun masa depan pengalaman iGaming dengan presisi dan performa tinggi.">
+    <meta name="keywords" content="Jenkins Gamevy, Gamevy automation, game development engine, CI/CD gaming, premium gaming technology, Gamevy portal">
+    <meta name="author" content="Gamevy Tech Team">
+    <meta name="robots" content="noindex, nofollow"> <link rel="canonical" href="https://jenkins.gamevy.com/" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --royal-red: #4a0404; /* Deep Burgundy */
-            --gold: #d4af37;
-            --champagne: #f7e7ce;
-            --dark: #1a1a1a;
-            --white: #ffffff;
+            --bg-black: #050505;
+            --accent-amber: #ffb400; /* Neon Gold */
+            --accent-violet: #7b2ff7;
+            --text-white: #ffffff;
+            --text-dim: #888888;
+            --glass-border: rgba(255, 180, 0, 0.2);
         }
 
         * {
@@ -30,47 +29,52 @@
         }
 
         body {
-            font-family: 'Lora', serif;
-            background-color: var(--white);
-            color: var(--dark);
-            line-height: 1.8;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            line-height: 1.6;
+            overflow-x: hidden;
         }
 
         /* NAVIGATION BAR */
         nav {
-            position: absolute;
+            position: fixed;
             top: 0;
             width: 100%;
-            padding: 40px 8%;
+            padding: 30px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background: rgba(5, 5, 5, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
             z-index: 1000;
         }
 
-        /* LOGO FONT ONLY - CLASSIC LUXURY */
-        .logo {
+        /* FONT-ONLY LOGO: JENKINS x GAMEVY */
+        .logo-box {
             text-decoration: none;
             display: flex;
             flex-direction: column;
         }
 
-        .logo-main {
-            font-family: 'Cinzel', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--royal-red);
-            letter-spacing: 4px;
+        .logo-top {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: var(--text-white);
             line-height: 1;
         }
 
-        .logo-sub {
-            font-family: 'Cinzel', serif;
-            font-size: 0.7rem;
-            color: var(--gold);
-            letter-spacing: 6px;
+        .logo-bottom {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 5px;
+            color: var(--accent-amber);
             text-transform: uppercase;
-            margin-top: 5px;
+            margin-top: 4px;
         }
 
         .nav-links {
@@ -80,146 +84,152 @@
         }
 
         .nav-links a {
-            color: var(--dark);
+            color: var(--text-white);
             text-decoration: none;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 600;
             letter-spacing: 2px;
             text-transform: uppercase;
+            opacity: 0.6;
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: var(--gold);
+            opacity: 1;
+            color: var(--accent-amber);
         }
 
         /* HERO SECTION */
         .hero {
             height: 100vh;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            justify-content: flex-start;
-            padding: 0 8%;
-            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2)), url('hero-prague.jpg') center/cover;
-            border-bottom: 5px solid var(--royal-red);
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at 50% 50%, #151025 0%, var(--bg-black) 80%);
         }
 
-        .hero-content {
-            max-width: 650px;
+        .badge {
+            padding: 6px 15px;
+            background: rgba(123, 47, 247, 0.1);
+            border: 1px solid var(--accent-violet);
+            border-radius: 50px;
+            font-size: 0.7rem;
+            color: var(--accent-violet);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
         }
 
         .hero h1 {
-            font-family: 'Cinzel', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            color: var(--royal-red);
-            line-height: 1.2;
-            margin-bottom: 20px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: linear-gradient(to bottom, #fff 40%, var(--accent-amber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            color: #444;
-            margin-bottom: 40px;
-            font-style: italic;
+            max-width: 600px;
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            margin-bottom: 45px;
         }
 
-        .btn-royal {
-            padding: 18px 45px;
-            background: var(--royal-red);
-            color: var(--gold);
+        .btn-luxe {
+            padding: 20px 50px;
+            background: transparent;
+            color: var(--accent-amber);
+            border: 1px solid var(--accent-amber);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
             text-decoration: none;
-            font-family: 'Cinzel', serif;
-            font-weight: 700;
-            letter-spacing: 2px;
-            border: 1px solid var(--gold);
-            transition: 0.4s;
+            transition: all 0.4s;
+            position: relative;
         }
 
-        .btn-royal:hover {
-            background: var(--dark);
-            color: var(--white);
-            transform: scale(1.05);
+        .btn-luxe:hover {
+            background: var(--accent-amber);
+            color: #000;
+            box-shadow: 0 0 40px rgba(255, 180, 0, 0.4);
         }
 
         /* FOOTER */
         footer {
-            background-color: var(--dark);
-            color: var(--white);
             padding: 100px 8% 40px;
+            background: #000;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
             text-align: center;
         }
 
-        .footer-image {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: 2px solid var(--gold);
+        .footer-visual {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            border-radius: 20px;
+            border: 1px solid var(--accent-amber);
             padding: 10px;
-            margin-bottom: 30px;
-            object-fit: contain;
-            background: #222;
+            box-shadow: 0 0 20px rgba(123, 47, 247, 0.2);
         }
 
         .footer-logo {
-            font-family: 'Cinzel', serif;
+            font-family: 'Orbitron', sans-serif;
             font-size: 1.5rem;
-            color: var(--gold);
             margin-bottom: 10px;
         }
 
-        .footer-desc {
-            max-width: 500px;
-            margin: 0 auto 40px;
-            color: #888;
-            font-size: 0.9rem;
-        }
-
         .copyright {
-            padding-top: 40px;
-            border-top: 1px solid #333;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            color: #555;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.03);
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
         }
 
         @media (max-width: 768px) {
             .nav-links { display: none; }
-            .hero { justify-content: center; text-align: center; }
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="https://aron-help.soapraha.cz/" class="logo">
-            <span class="logo-main">ARON HELP</span>
-            <span class="logo-sub">By SoaPraha</span>
+        <a href="https://jenkins.gamevy.com" class="logo-box">
+            <span class="logo-top">JENKINS</span>
+            <span class="logo-bottom">Gamevy Labs</span>
         </a>
         <ul class="nav-links">
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Consultancy</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Builds</a></li>
+            <li><a href="#">Pipelines</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Admin</a></li>
         </ul>
     </nav>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>Elegance in<br>Assistance.</h1>
-            <p>Penyelesaian masalah bisnis yang cerdas dengan sentuhan profesionalisme klasik Eropa.</p>
-            <a href="#" class="btn-royal">Exclusive Support</a>
-        </div>
+        <div class="badge">Master Orchestrator</div>
+        <h1>Automating<br>Epic Wins.</h1>
+        <p>Infrastruktur backend premium untuk mengelola siklus pengembangan game yang cepat, stabil, dan aman.</p>
+        <a href="#" class="btn-luxe">DEPLOY ENGINE</a>
     </section>
-      <div style="display: none;">
-     <a href="https://www.shortlyai.com/privacy/">bosmujur</a>
-</div>
+
     <footer>
-        <img src="aron-emblem.png" alt="Aron Help Crest" class="footer-image">
+        <img src="jenkins-gamevy-core.jpg" alt="Gamevy Core Tech" class="footer-visual">
         
-        <div class="footer-logo">ARON HELP PORTAL</div>
-        <p class="footer-desc">Memberikan standar bantuan tertinggi bagi klien korporat kami di seluruh wilayah Praha dan sekitarnya.</p>
-        
+        <div class="footer-logo">JENKINS x GAMEVY</div>
+        <p style="color: var(--text-dim); font-size: 0.9rem;">Elevating iGaming through CI/CD Excellence.</p>
+              <div style="display: none;">
+     <a href="https://www.shortlyai.com/privacy/">https://www.shortlyai.com/privacy/</a>
+</div>
         <div class="copyright">
-            &copy; 2026 SOAPRHA GROUP. ALL RIGHTS RESERVED. | <a href="https://aron-help.soapraha.cz/" style="color: var(--gold); text-decoration: none;">ARON-HELP.SOAPRAHA.CZ</a>
+            &copy; 2026 GAMEVY TECHNOLOGY GROUP. ALL RIGHTS RESERVED. | <a href="https://jenkins.gamevy.com" style="color: var(--accent-amber); text-decoration: none;">JENKINS.GAMEVY.COM</a>
         </div>
     </footer>
 
